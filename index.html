@@ -54,7 +54,7 @@
         .container {
             max-width: 80%;
             margin: 0 auto;
-            padding: 80px 40px;
+            padding: 0 40px 80px 40px;
             background-color: var(--color-surface);
             min-height: 100vh;
             box-shadow: 0 0 50px rgba(0,0,0,0.03);
@@ -105,7 +105,7 @@
             display: flex;
             align-items: baseline;
             border-top: 1px solid var(--color-border);
-            padding-top: 24px;
+            padding-top: 300px;
             margin-bottom: 40px;
         }
 
@@ -141,12 +141,16 @@
 
         /* NEW: Emphasized Catchcopy */
         .catchcopy-large {
-            font-size: 32px; /* 大きく強調 */
+            font-size: 2.5vw; /* 大きく強調 */
             font-weight: 700;
             line-height: 1.2;
             letter-spacing: -0.04em;
             margin-bottom: 32px;
             color: var(--color-text-main);
+        }
+
+        p {
+            font-size: 1.2vw;
         }
 
         @media (max-width: 768px) {
@@ -158,11 +162,23 @@
         /* Image Styling */
         .visual-area {
             width: 100%;
-            aspect-ratio: 16 / 5;
+            aspect-ratio: 16 / 6;
             overflow: hidden;
             margin-bottom: 32px;
             background-color: #f0f0f0;
             position: relative;
+        }
+
+        .mainvia {
+            overflow: hidden;
+            height: 60dvh;
+            margin-bottom: 32px;
+            background-color: #f0f0f0;
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+            object-position: center;
+            margin-top: 60px;
         }
 
         .visual-area img {
@@ -190,7 +206,7 @@
 
         /* Hero */
         .hero {
-            height: 90vh;
+            height: 95vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -211,10 +227,11 @@
             line-height: 1.1;
             letter-spacing: -0.04em;
             margin-bottom: 24px;
+            margin-top: 70px;
         }
 
         .hero-sub {
-            font-size: 18px;
+            font-size: 1.5vw;
             color: var(--color-text-sub);
         }
 
@@ -229,15 +246,6 @@
             font-family: var(--font-english);
             letter-spacing: 0.2em;
             color: var(--color-text-muted);
-        }
-
-        /* Why Design Section (Bg Gray) */
-        .bg-gray-block {
-            background-color: #F8FAFC;
-            padding: 60px 40px;
-            margin: 0 -40px 160px -40px;
-            border-top: 1px solid var(--color-border);
-            border-bottom: 1px solid var(--color-border);
         }
 
         /* Key Takeaway Box */
@@ -366,8 +374,11 @@
         
         <!-- 0. First View -->
         <section class="hero fade-in">
-            <div class="visual-area" style="height: 400px;">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000" alt="Minimal Office">
+            <p class="hero-sub">
+                Career Philosophy　｜　東京造形大学　髙橋健
+            </p>
+            <div class="visual-area2">
+                <img src="img/pro_background.webp" alt="Minimal Office" class="mainvia" >
             </div>
             <h1 class="hero-title">人の役に立ちたい。</h1>
             <p class="hero-sub">
@@ -409,7 +420,7 @@
             <div class="content-block">
                 
                 <div class="visual-area">
-                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1600" alt="Strategy">
+                    <img src="img/goal.jpeg" alt="Strategy">
                 </div>
                 <h3 class="catchcopy-large">目的達成力</h3>
                 <div class="body-text">
@@ -432,7 +443,7 @@
             <div class="content-block">
                 
                 <div class="visual-area">
-                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=1600" alt="Sketching">
+                    <img src="img/kanpeki.jpeg" alt="Sketching">
                 </div>
                 <h3 class="catchcopy-large">完璧主義なところ</h3>
                 <div class="body-text">
@@ -458,7 +469,7 @@
 
                     
                     <div class="visual-area">
-                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1600" alt="Wireframing">
+                        <img src="img/design.jpeg" alt="Wireframing">
                     </div>
                     <h3 class="catchcopy-large">不便を、仕組みとして解消できる手段だから</h3>
                     <div class="body-text">
@@ -477,7 +488,7 @@
                 </div>
                 <div class="content-block">
                     <div class="visual-area">
-                    <img src="https://sour-aqua-iuy55u8xk8-oc4xdqdwhj.edgeone.dev/AdobeStock_626696527.jpeg" alt="Note">
+                    <img src="img/uiux.jpeg" alt="Note">
                 </div>
                     <h3 class="catchcopy-large">「使える」ではなく「困らない」状態まで責任を持ちたいから</h3>
                     <div class="body-text">
@@ -498,7 +509,7 @@
             <div class="content-block">
                 
                 <div class="visual-area">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1600" alt="App Development">
+                    <img src="img/gakuchika1.jpg" alt="App Development">
                 </div>
                 <h3 class="catchcopy-large">Webアプリ「ZONAVI」のリリースと改善</h3>
                 <div class="body-text">
@@ -527,7 +538,7 @@
             <div class="content-block">
                 
                 <div class="visual-area">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600" alt="Teamwork">
+                    <img src="img/soccer.png" alt="Teamwork">
                 </div>
                 <h3 class="catchcopy-large">年上中心のチームでの役割調整経験</h3>
                 <div class="body-text">
@@ -552,7 +563,7 @@
             <div class="content-block">
                 
                 <div class="visual-area">
-                    <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?q=80&w=1600" alt="Note">
+                    <img src="img/miss.jpeg" alt="Note">
                 </div>
                 <h3 class="catchcopy-large">アウトプットを出すタイミングを誤った経験</h3>
                 <div class="body-text">
@@ -573,7 +584,7 @@
                 <div class="section-title"><h2>将来像</h2></div>
             </div>
             <div class="visual-area" style="height: 400px; margin-bottom: 40px;">
-                <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=1600" alt="Future">
+                <img src="img/future.jpeg" alt="Future">
             </div>
             <div class="content-block">
                 <h3 class="catchcopy-large">人の役に立ちたい。</h3>
